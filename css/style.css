@@ -9,8 +9,13 @@
 }
 
 body{
-    background-color: cadetblue;
+    background-image: url(../img/blob-scene-haikei.svg);
     user-select: none;
+}
+/* uitility classes */
+
+.pointer{
+    cursor: pointer;
 }
 
 /* img */
