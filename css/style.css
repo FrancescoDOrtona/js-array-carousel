@@ -14,8 +14,12 @@ body{
 
 /* img */
 .carousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
     padding: 40px 0px;
+    height: 800px;
 }
 
 .img{
@@ -42,6 +46,7 @@ body{
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: space-between;
+    padding: 0px 10px;
 }
 
 .circle{
