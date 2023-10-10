@@ -25,12 +25,8 @@ for(let i = 0; i < carouselImages.length; i++){
     carouselDOMElement.innerHTML += imgString
 }
 
-// Ciclo for per mostrare un'immagine alla volta
+// Mostrare un'immagine alla volta
  const carouselImgDOMElements = document.getElementsByClassName('carousel__img')
  const firstImageDOMElement = carouselImgDOMElements[0]
  firstImageDOMElement.classList.add('active')
 console.log(firstImageDOMElement)
-
-
-
-

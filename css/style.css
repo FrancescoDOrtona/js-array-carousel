@@ -8,7 +8,15 @@
     margin: 0 auto;
 }
 
+body{
+    background-color: cadetblue;
+}
+
 /* img */
+.carousel{
+    position: relative;
+    padding: 40px 0px;
+}
 
 .img{
     max-width: 100%;
@@ -18,9 +26,20 @@
 .carousel__img{
     display: none;
     justify-content: center;
-    padding: 50px;
 }
 
 .active{
     display: flex;
+}
+
+.slide{
+    width: 100%;
+    padding: 0px 30px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    color: white;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
 }
