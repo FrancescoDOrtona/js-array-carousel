@@ -10,6 +10,7 @@
 
 body{
     background-color: cadetblue;
+    user-select: none;
 }
 
 /* img */
