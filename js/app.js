@@ -52,8 +52,8 @@ rightArrowDOMElement.addEventListener("click", function () {
   actualImageDOMElement.classList.remove("active");
 
 //   thumbnail
-const actualThumbnailOpacityDomElement = thumbnailImgDomElements[actualImgIdx];
-actualThumbnailOpacityDomElement.classList.remove('br;ightness-1');
+  const actualThumbnailOpacityDomElement = thumbnailImgDomElements[actualImgIdx];
+  actualThumbnailOpacityDomElement.classList.remove('brightness-1');
  
   // Se sono all'ultimo elemento
   if (actualImgIdx === (carouselImgDOMElements.length - 1)) {
@@ -67,7 +67,7 @@ actualThumbnailOpacityDomElement.classList.remove('br;ightness-1');
 //   thumbnail
   const nextThumbnailDomElement = thumbnailImgDomElements[actualImgIdx];
   nextThumbnailDomElement.classList.add('brightness-1');
-});
+})
 
 // Ciclo per spostare la classe active con il left slider
 const leftArrowDOMElement = document.querySelector(".left-arrow");
