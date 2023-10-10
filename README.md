@@ -1,0 +1,17 @@
+# Array Carousel
+- Creo il markup statico nell'html per definire la struttura
+- Dichiarazione
+    - dichiaro le variabili
+    - creo un array contente le immagini
+    - recupero il Dom element tramite la classe
+- Creo un ciclo for con il quale vado ad inserire le immagini nel Dom
+    - let i = 0; i < lunghezza dell'array; i++
+    - dichiaro una variabile nel ciclo con cui vado ad assegnare le immagini currentImg = "nomeArray"[i]
+    - dichiaro una variabile con cui inserisco la stringa nel Dom per ogni ciclo
+    - inserisco la stringa per ogni ciclo
+- Dichiaro una variabile e vado a recuperare nel dom l'elemento con cui cambiare immagine
+- Aggiungo un eventListener e una classe
+    - aggiungo un event listener che ad ogni click va a cambiare la classe assegnata per far comparire l'immagine
+        - Assegno una classe per far comparire solo un'immagine alla volta
+        - vado a recuperare l'elemento nel Dom tramite la classe assegnata ad ogni immagine
+        - aggiungo una classe ('active') all'immagine corrente per farla apparire
