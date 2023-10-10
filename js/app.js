@@ -39,12 +39,22 @@ const firstImageDOMElement = carouselImgDOMElements[actualImgIdx];
 firstImageDOMElement.classList.add("active");
 console.log(firstImageDOMElement);
 
+// Thumbnail
+const thumbnailImgDomElements = document.getElementsByClassName('col')
+const firstThumbnailOpacityDomElement = thumbnailImgDomElements[actualImgIdx]
+firstThumbnailOpacityDomElement.classList.add('brightness-1')
+
 // Ciclo per spostare la classe active con il right slider
 const rightArrowDOMElement = document.querySelector(".right-arrow");
 
 rightArrowDOMElement.addEventListener("click", function () {
   const actualImageDOMElement = carouselImgDOMElements[actualImgIdx];
   actualImageDOMElement.classList.remove("active");
+
+//   thumbnail
+const actualThumbnailOpacityDomElement = thumbnailImgDomElements[actualImgIdx]
+actualThumbnailOpacityDomElement.classList.remove('brightness-1')
+ 
   // Se sono all'ultimo elemento
   if (actualImgIdx === (carouselImgDOMElements.length - 1)) {
     actualImgIdx = 0;
@@ -53,6 +63,10 @@ rightArrowDOMElement.addEventListener("click", function () {
   }
   const nextImageDOMElement = carouselImgDOMElements[actualImgIdx];
   nextImageDOMElement.classList.add("active");
+  
+//   thumbnail
+  const nextThumbnailDomElement = thumbnailImgDomElements[actualImgIdx]
+  nextThumbnailDomElement.classList.add('brightness-1')
 });
 
 // Ciclo per spostare la classe active con il left slider
@@ -61,6 +75,11 @@ const leftArrowDOMElement = document.querySelector(".left-arrow");
 leftArrowDOMElement.addEventListener('click', function (){
     const actualImageDOMElement = carouselImgDOMElements[actualImgIdx];
     actualImageDOMElement.classList.remove('active');
+
+    // thumbnail
+    const actualThumbnailOpacityDomElement = thumbnailImgDomElements[actualImgIdx]
+    actualThumbnailOpacityDomElement.classList.remove('brightness-1')
+
     // Se sono al primo elemento
     if(actualImgIdx === 0){
         actualImgIdx = (carouselImgDOMElements.length - 1);
@@ -69,4 +88,8 @@ leftArrowDOMElement.addEventListener('click', function (){
     }
     const prevImageDOMElement = carouselImgDOMElements[actualImgIdx];
     prevImageDOMElement.classList.add("active");
+
+    // thumbnail
+    const prevThumbnailDomElement = thumbnailImgDomElements[actualImgIdx]
+    prevThumbnailDomElement.classList.add('brightness-1')
 })
