@@ -40,9 +40,9 @@ firstImageDOMElement.classList.add("active");
 console.log(firstImageDOMElement);
 
 // Thumbnail
-const thumbnailImgDomElements = document.getElementsByClassName('col')
-const firstThumbnailOpacityDomElement = thumbnailImgDomElements[actualImgIdx]
-firstThumbnailOpacityDomElement.classList.add('brightness-1')
+const thumbnailImgDomElements = document.getElementsByClassName('col');
+const firstThumbnailOpacityDomElement = thumbnailImgDomElements[actualImgIdx];
+firstThumbnailOpacityDomElement.classList.add('brightness-1');
 
 // Ciclo per spostare la classe active con il right slider
 const rightArrowDOMElement = document.querySelector(".right-arrow");
@@ -52,8 +52,8 @@ rightArrowDOMElement.addEventListener("click", function () {
   actualImageDOMElement.classList.remove("active");
 
 //   thumbnail
-const actualThumbnailOpacityDomElement = thumbnailImgDomElements[actualImgIdx]
-actualThumbnailOpacityDomElement.classList.remove('brightness-1')
+const actualThumbnailOpacityDomElement = thumbnailImgDomElements[actualImgIdx];
+actualThumbnailOpacityDomElement.classList.remove('br;ightness-1');
  
   // Se sono all'ultimo elemento
   if (actualImgIdx === (carouselImgDOMElements.length - 1)) {
@@ -65,8 +65,8 @@ actualThumbnailOpacityDomElement.classList.remove('brightness-1')
   nextImageDOMElement.classList.add("active");
   
 //   thumbnail
-  const nextThumbnailDomElement = thumbnailImgDomElements[actualImgIdx]
-  nextThumbnailDomElement.classList.add('brightness-1')
+  const nextThumbnailDomElement = thumbnailImgDomElements[actualImgIdx];
+  nextThumbnailDomElement.classList.add('brightness-1');
 });
 
 // Ciclo per spostare la classe active con il left slider
@@ -77,8 +77,8 @@ leftArrowDOMElement.addEventListener('click', function (){
     actualImageDOMElement.classList.remove('active');
 
     // thumbnail
-    const actualThumbnailOpacityDomElement = thumbnailImgDomElements[actualImgIdx]
-    actualThumbnailOpacityDomElement.classList.remove('brightness-1')
+    const actualThumbnailOpacityDomElement = thumbnailImgDomElements[actualImgIdx];
+    actualThumbnailOpacityDomElement.classList.remove('brightness-1');
 
     // Se sono al primo elemento
     if(actualImgIdx === 0){
@@ -90,6 +90,6 @@ leftArrowDOMElement.addEventListener('click', function (){
     prevImageDOMElement.classList.add("active");
 
     // thumbnail
-    const prevThumbnailDomElement = thumbnailImgDomElements[actualImgIdx]
-    prevThumbnailDomElement.classList.add('brightness-1')
+    const prevThumbnailDomElement = thumbnailImgDomElements[actualImgIdx];
+    prevThumbnailDomElement.classList.add('brightness-1');
 })
