@@ -21,6 +21,7 @@ body{
 .img{
     max-width: 100%;
     max-height: 600px;
+    border-radius: 15px;
 }
 
 .carousel__img{
@@ -34,7 +35,6 @@ body{
 
 .slide{
     width: 100%;
-    padding: 0px 30px;
     top: 50%;
     left: 50%;
     position: absolute;
@@ -42,4 +42,14 @@ body{
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: space-between;
+}
+
+.circle{
+    background-color: rgba(0, 0, 0, 0.4);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
